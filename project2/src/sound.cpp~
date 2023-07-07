@@ -1,0 +1,9 @@
+#include "sound.hpp"
+
+
+Sound::Sound()
+{
+  Mix_OpenAudio
+
+
+}

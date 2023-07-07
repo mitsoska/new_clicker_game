@@ -1,0 +1,12 @@
+#include "particle.hpp"
+
+Particle::respawn()
+{
+  this->dx = 20 + rand() % 180
+  this->dy = 20 + rand() % 180;
+
+  this->current_x = x;
+  this->current_y = y;
+
+}
+

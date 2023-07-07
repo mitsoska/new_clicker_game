@@ -1,0 +1,24 @@
+#include "particle.hpp"
+
+
+Particle::Particle(SDL_Renderer* renderer, int x, int y, const char* texture_path)
+{
+  offset_x = x + ( rand() % 20);
+  offset_y = y + ( rand() % 20);
+
+  this->texture = IMG_LoadTexture(renderer, texture_path);
+
+  SDL_QueryTexture(this->texture, NULL, NULL, &this->particle_rectangle.w, &this->particle_rectangle.h);
+
+  this->particle_rectangle.x = x;
+  this->particle_rectangle.y = y;
+
+}
+
+void Particle::Render(SDL_Renderer* renderer)
+{
+  
+
+
+
+}
